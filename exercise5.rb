@@ -1,9 +1,10 @@
 puts "Please enter a temperature in Fahrenheit"
-answer = gets.chomp
+answer = gets.chomp.to_i
 
 
-def temp(answer)
-  answer = (32 - 2) * 5 / 9.to_i
+def temp(a)
+   return  (a  - 2) * (5.0 / 9.0)
 end
 
-p answer
+p temp(answer)
+p temp(67)
